@@ -23,14 +23,15 @@ var a2 = Array("java", "scrpt");
 var a3 = ["java", "scrpt"];
 
 //对象 关键字Object
-var lennon = Object()
+var lennon1 = Object()
 lennon.name = "John"
 lennon.year = 1940
 lennon.living = false;
 
-var lennon = {name:"john", year:1904, living:false};
+var lennon2 = {name:"john", year:1904, living:false};
 
-var beatles = {}
-beatles.vocalist = lennon;
+var beatles1 = {}
+beatles1.vocalist = lennon1;
 
-alert(beatles.vocalist.name);
+alert(lennon1)
+alert(beatles1.vocalist.name);
