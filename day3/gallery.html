@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Image Gallery</title>
+        <script type="text/javascript" src="showPic.js"></script>
+    </head>
+    <body>
+        <h1>Snapshots</h1>
+        <ul>            <!--无序清单元素 有序清单元素为<ol>-->
+            <li>
+                <a href="images/Amiya.jpeg" onclick = "showPic(this); return false;" 
+                title="Amiya">兔兔</a>  <!--this代表“这个对象” return false代表不执行弹出新窗口指令-->
+            </li>
+            <li>
+                <a href="images/mafumafu.jpg" onclick = "showPic(this); return false;"
+                title="mafumafu">mafumafu</a>
+            </li>
+            <li>
+                <a href="images/MudRock.jpg" onclick = "showPic(this); return false;"
+                title="MudRock">MudRock</a>
+            </li>
+            <li>
+                <a href="images/Saga.jpg" onclick = "showPic(this); return false;"
+                title="Saga">Saga</a>
+            </li>
+        </ul>
+        <img id="placeholder" src="images/placeholder.gif" alt="my inage gallery"/>
+        <p id="description">Choose an image.</p>
+    </body>
+</html>
