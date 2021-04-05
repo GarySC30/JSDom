@@ -4,10 +4,12 @@
         <meta charset="utf-8"/>
         <title>Image Gallery</title>
         <script type="text/javascript" src="showPic.js"></script>
+        <link rel="stylesheet" href="layout.css" media="screen"/>
     </head>
     <body>
-        <h1>Snapshots</h1>
+        <h1>图片库</h1>
         <ul>            <!--无序清单元素 有序清单元素为<ol>-->
+            <p id="description">Choose an image.</p>
             <li>
                 <a href="images/Amiya.jpeg" onclick = "showPic(this); return false;" 
                 title="Amiya">兔兔</a>  <!--this代表“这个对象” return false代表不执行弹出新窗口指令-->
@@ -26,6 +28,5 @@
             </li>
         </ul>
         <img id="placeholder" src="images/placeholder.gif" alt="my inage gallery"/>
-        <p id="description">Choose an image.</p>
     </body>
 </html>
