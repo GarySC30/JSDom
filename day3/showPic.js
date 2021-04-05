@@ -7,8 +7,9 @@ function showPic(whichpic) {
     var source = whichpic.getAttribute("href"); // 取出图片的文件路径
     var placeholder = document.getElementById("placeholder"); // 取出占位符的文件路径
     placeholder.setAttribute("src",source);
-    var text = whichpic.getAttribute("title"); // 获取title属性值
-    var description = document.getElementById("description");
+    var text = whichpic.getAttribute("title"); // 点击链接时,获取title属性值
+    var description = document.getElementById("description"); // 得到id是“description"的<p>元素，保存到变量description中
+    description.firstChild.nodeValue = text; // 把description对象的第一个子节点的nodeValue属性值设置为变量text的值
 }
 
 // childNodes属性
